@@ -1,0 +1,26 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-marquee {
+    display: flex;
+    animation: marquee 10s linear infinite;
+    will-change: transform;
+  }
+  
+  .overflow-hidden {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .animate-marquee > div {
+    flex-shrink: 0;
+    display: flex;
+  }
+  
